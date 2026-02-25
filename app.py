@@ -44,6 +44,10 @@ def main():
                     if errors:
                         st.error(f"{len(errors)}件のエラーが発生しました。")
                         st.write(errors)
+                    
+                    # 処理完了後、一時ファイルを削除
+                    os.remove(file_path)
+
             except Exception as e:
                 st.error(f"データ処理中に予期しないエラーが発生しました: {e}")
 
