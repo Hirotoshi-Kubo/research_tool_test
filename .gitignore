@@ -13,7 +13,7 @@ wheels/
 research_data.db
 
 # Reports
-*.txt
+research_report.txt
 
 # Input
 input/
